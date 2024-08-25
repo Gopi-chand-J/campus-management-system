@@ -1,0 +1,29 @@
+/* Style for the navigation buttons */
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.navigation button {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+/* Style for the overall background */
+body {
+  background-color: #f5f5f5; /* Light grey background */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the content area */
+router-outlet + * {
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 20px auto;
+}

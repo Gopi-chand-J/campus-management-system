@@ -1,0 +1,21 @@
+<h2>Add Student</h2>
+<form (ngSubmit)="onSubmit(studentForm)" #studentForm="ngForm" class="student-form">
+  
+  <!-- Label for Name -->
+  <label for="name" class="input-label">Name</label>
+  <mat-form-field appearance="outline" class="full-width">
+    <input matInput id="name" placeholder="Enter your name" [(ngModel)]="student.name" name="name" required>
+  </mat-form-field>
+
+  <!-- Label for Email -->
+  <label for="email" class="input-label">Email</label>
+  <mat-form-field appearance="outline" class="full-width">
+    <input matInput id="email" placeholder="Enter your email" [(ngModel)]="student.email" name="email" required>
+  </mat-form-field>
+
+  <!-- Error message -->
+  <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+
+  <!-- Submit Button -->
+  <button mat-raised-button color="primary" type="submit">Add Student</button>
+</form>
